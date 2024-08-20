@@ -1,0 +1,9 @@
+<!-- hijo de catalog component -->
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">{{product.name}}</h5>
+        <p class="text">{{product.description}}</p>
+        <p class="text">{{product.price}}</p>
+        <button class="btn btn-primary" (click)="onAddCart(product)">Agregar al carro</button>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<h3>Catalogo de productos App</h3>
+<!-- Componente hijo de cart-app CartAppComponent. -->
+<catalog [products]="products" (productEventEmitter)="onAddCart($event)"/>
+<!-- Componente hijo cart de  cart-app CartAppComponent.-->
+@if (items.length > 0) {
+    <cart [items]="items"/>
+} @else {
+    <div class="alert alert-warning">
+        No hay elementos en el carro de compra!
+    </div>
+}
